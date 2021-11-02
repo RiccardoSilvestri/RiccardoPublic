@@ -174,7 +174,7 @@ int main()
 cout << "==================================================" << endl;
     cout << "| press 0 to download the latest update      |" << endl;
     cout << "| press 1 to Hibernate / Restart / Shut down |" << endl;
-    cout << "| press 2 to never abandon you               |" << endl;
+    cout << "| press 2 to Never Gonna Give You Up         |" << endl;
     cout << "| press 3 for random numbers                 |" << endl;
     cout << "| press 4 to open sound                      |" << endl;
     cout << "| press 5 to satisfy Discord                 |" << endl;
