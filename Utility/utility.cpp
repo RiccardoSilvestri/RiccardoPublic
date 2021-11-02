@@ -171,16 +171,16 @@ void fileMove(string file, string source, string destination)
 int main()
 {
     setlocale(LC_ALL, "italian"); 
-    cout << "==============================================" << endl;
-    cout << "|  premi 0 per Scaricare l'ultimo update     |" << endl;
-    cout << "|  premi 1 per Ibernare/Riavviare/Spegnere   |" << endl;
-    cout << "|  premi 2 per never gonna give you up       |" << endl;
-    cout << "|  premi 3 per numeri randomici              |" << endl;
-    cout << "|  premi 4 per Aprire sound	             |" << endl;
-    cout << "|  premi 5 per Chiudere Discord              |" << endl;
-    cout << "|  premi 6 per Riavvio forzato Steam         |" << endl;   
-    cout << "|  premi 7 per Copia e sposta                |" << endl; 
-    cout << "|  premi 8 per uscire                        |" << endl;
+cout << "==================================================" << endl;
+    cout << "| press 0 to download the latest update      |" << endl;
+    cout << "| press 1 to Hibernate / Restart / Shut down |" << endl;
+    cout << "| press 2 to never abandon you               |" << endl;
+    cout << "| press 3 for random numbers                 |" << endl;
+    cout << "| press 4 to open sound                      |" << endl;
+    cout << "| press 5 to satisfy Discord                 |" << endl;
+    cout << "| press 6 for Force Restart Steam            |" << endl;
+    cout << "| press 7 for Copy and Move                  |" << endl;
+    cout << "| press 8 to exit                            |" << endl;
     cout << "==============================================" << endl;
 
 	int sc;
@@ -196,9 +196,9 @@ int main()
         		Sleep(10000);
         		break;
         case 1:
-        	cout << " 1- Ibernare "<< endl;
-        	cout << " 2- Spegnere "<< endl;
-        	cout << " 3- Riavviare "<< endl;
+		cout << "1- Hibernate" << endl;
+        cout << "2- Turn off" << endl;
+        cout << "3- Restart" << endl;
         	cin>>sc;
 if(sc==1){
 	system("shutdown -h");
@@ -220,7 +220,7 @@ if(sc==3){
              case 3:
         	srand(time(0));
 				
-				cout<<"quanti numeri?"<< endl;
+				cout<<"how many numbers?"<< endl;
 				cin >>num;
 		
 	for (int i = 0; i < num; i++)
