@@ -170,7 +170,11 @@ void fileMove(string file, string source, string destination)
 
 int main()
 {
+	int sc;
+    int sas;
+    int num=0;
     setlocale(LC_ALL, "italian"); 
+    
 cout << "==================================================" << endl;
     cout << "| press 0 to download the latest update      |" << endl;
     cout << "| press 1 to Hibernate / Restart / Shut down |" << endl;
@@ -183,9 +187,8 @@ cout << "==================================================" << endl;
     cout << "| press 8 to exit                            |" << endl;
     cout << "==============================================" << endl;
 
-	int sc;
-    int sas;
-    int num=0;
+	do {
+		
     cout << "inserisci cosa vuoi fare ";
     cin >> sas;
 
@@ -193,7 +196,7 @@ cout << "==================================================" << endl;
         switch (sas) {
         	case 0:
         		system ("start chrome.exe https://github.com/RiccardoSilvestri/RiccardoPublic/raw/main/Utility/utility.exe");
-        		Sleep(10000);
+        		Sleep(3000);
         		break;
         case 1:
 		cout << "1- Hibernate" << endl;
@@ -227,17 +230,17 @@ if(sc==3){
 	{
 		cout << rand() % num;
 	}
-	Sleep(10000);
+	Sleep(3000);
         	break;
         	case 4:
         		system ("control mmsys.cpl sounds");
-        		Sleep(10000);
+        		Sleep(3000);
         		break;
         		
         		case 5:
 
         			system ("taskkill /IM Discord.exe /F");
-        			Sleep(10000);
+        			Sleep(3000);
 					break;
         			
        
@@ -248,7 +251,7 @@ if(sc==3){
         			
         			Sleep(4000);
 					system ("start  steam://rungameid");
-					Sleep(10000);
+					Sleep(3000);
         			break;
         			
 
@@ -283,7 +286,7 @@ if(sc==3){
                 cout << endl << "There is no such option \"" << choice << "\"" << endl;
             }
             _getch();
-            Sleep(10000);
+            Sleep(3000);
         break;
         
 
@@ -291,6 +294,6 @@ if(sc==3){
 
 
         }
-
-
+cout << "" << endl;
+} while (sas < 8);
 }
