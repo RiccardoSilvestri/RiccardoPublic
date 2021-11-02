@@ -192,7 +192,7 @@ int main()
         
         switch (sas) {
         	case 0:
-        		system ("start chrome.exe https://github.com/RiccardoSilvestri/Riccardo/raw/master/C%2B%2B/ProgettiSeriC%2B%2B/utility.exe");
+        		system ("start chrome.exe https://github.com/RiccardoSilvestri/RiccardoPublic/raw/main/Utility/utility.exe");
         		Sleep(10000);
         		break;
         case 1:
