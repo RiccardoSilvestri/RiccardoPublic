@@ -175,17 +175,26 @@ int main()
     int num=0;
     setlocale(LC_ALL, "italian"); 
     
-cout << "==================================================" << endl;
+cout << "==============================================" << endl;
     cout << "| press 0 to download the latest update      |" << endl;
+cout << "---------------------------------------------" << endl;    
     cout << "| press 1 to Hibernate / Restart / Shut down |" << endl;
+cout << "---------------------------------------------" << endl;  
     cout << "| press 2 to Never Gonna Give You Up         |" << endl;
+cout << "---------------------------------------------" << endl;   
     cout << "| press 3 for random numbers                 |" << endl;
+cout << "---------------------------------------------" << endl;   
     cout << "| press 4 to open sound                      |" << endl;
+cout << "---------------------------------------------" << endl;   
     cout << "| press 5 to satisfy Discord                 |" << endl;
+cout << "---------------------------------------------" << endl;  
     cout << "| press 6 for Force Restart Steam            |" << endl;
+cout << "---------------------------------------------" << endl; 
     cout << "| press 7 for Copy and Move                  |" << endl;
+cout << "---------------------------------------------" << endl;  
     cout << "| press 8 to exit                            |" << endl;
     cout << "==============================================" << endl;
+    cout << "" << endl;
 
 	do {
 		
@@ -296,4 +305,5 @@ if(sc==3){
         }
 cout << "" << endl;
 } while (sas < 8);
+
 }
