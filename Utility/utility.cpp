@@ -186,7 +186,7 @@ cout << "---------------------------------------------" << endl;
 cout << "---------------------------------------------" << endl;   
     cout << "| press 4 to open sound                      |" << endl;
 cout << "---------------------------------------------" << endl;   
-    cout << "| press 5 to satisfy Discord                 |" << endl;
+    cout << "| press 5 to Stop Discord                    |" << endl;
 cout << "---------------------------------------------" << endl;  
     cout << "| press 6 for Force Restart Steam            |" << endl;
 cout << "---------------------------------------------" << endl; 
