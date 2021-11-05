@@ -10,8 +10,9 @@
 #include <ctime>
 
 
-using namespace std;
 
+using namespace std;
+#include "pwgen.h"
 //function  to copy a file from one location to other
 void fileCopy(string file, string source, string destination)
 {
@@ -184,15 +185,17 @@ cout << "---------------------------------------------" << endl;
 cout << "---------------------------------------------" << endl;   
     cout << "| press 3 for random numbers                 |" << endl;
 cout << "---------------------------------------------" << endl;   
-    cout << "| press 4 to open sound                      |" << endl;
+    cout << "| press 4 for password generator             |" << endl;
 cout << "---------------------------------------------" << endl;   
-    cout << "| press 5 to Stop Discord                    |" << endl;
+    cout << "| press 5 to open sound                      |" << endl;
+cout << "---------------------------------------------" << endl;   
+    cout << "| press 6 to Stop Discord                    |" << endl;
 cout << "---------------------------------------------" << endl;  
-    cout << "| press 6 for Force Restart Steam            |" << endl;
+    cout << "| press 7 for Force Restart Steam            |" << endl;
 cout << "---------------------------------------------" << endl; 
-    cout << "| press 7 for Copy and Move                  |" << endl;
+    cout << "| press 8 for Copy and Move                  |" << endl;
 cout << "---------------------------------------------" << endl;  
-    cout << "| press 8 to exit                            |" << endl;
+    cout << "| press 9 to exit                            |" << endl;
     cout << "==============================================" << endl;
     cout << "" << endl;
 
@@ -241,19 +244,19 @@ if(sc==3){
 	}
 	Sleep(3000);
         	break;
-        	case 4:
+        	case 5:
         		system ("control mmsys.cpl sounds");
         		Sleep(3000);
         		break;
         		
-        		case 5:
+        		case 6:
 
         			system ("taskkill /IM Discord.exe /F");
         			Sleep(3000);
 					break;
         			
        
-	case 6:
+	case 7:
 
         			system ("taskkill /IM steamwebhelper.exe /F");
         			system ("taskkill /IM steam.exe /F");
@@ -262,9 +265,30 @@ if(sc==3){
 					system ("start  steam://rungameid");
 					Sleep(3000);
         			break;
-        			
-
-	    case 7:
+        		
+					
+		case 4:
+			int tipo;
+			int lung;
+			cout <<""<<	endl;
+			cout << "you want it to contain" << endl;
+			cout <<""<<	endl;
+			cout << "1-Numbers and letters" << endl;
+			cout << "2-Numbers only" << endl;
+			cout << "3-Characters only" << endl;
+			cout << "4-Letters only" << endl;	
+						cin >> tipo ;
+						tipo --;
+							
+								cout <<"how long? "<< endl;
+								cin >> lung;
+								cout << pwgen (tipo,lung);
+							cout <<""<<	endl;		
+	
+		
+			break;
+	
+	    case 8:
 
             string choice;
             string fileName, source, destination;
@@ -304,6 +328,6 @@ if(sc==3){
 
         }
 cout << "" << endl;
-} while (sas < 8);
+} while (sas < 9);
 
 }
